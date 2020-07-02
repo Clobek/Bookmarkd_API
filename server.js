@@ -8,7 +8,7 @@ const cors = require('cors');
 const PORT = process.env.PORT || 3000
 const bookmarkController = require(`./controllers/bookmarks.js`)
 const db = mongoose.connection;
-const MONGODB_URI = process.env.MONGODB_URL || 'mongodb://localhost:27017/bookmarks';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/bookmarks';
 
 // Database
 mongoose.connect(MONGODB_URI, {
